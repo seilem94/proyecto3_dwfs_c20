@@ -1,0 +1,79 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+  padding-top: 70px; /* evita que el contenido quede oculto tras el navbar */
+  font-family: Arial, sans-serif;
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+  background: url('../imagenes/hero.jpg') no-repeat center center/cover;
+  height: 90vh;
+}
+
+.hero h1, .hero p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* ====== NAVBAR ====== */
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+/* ====== SERVICIOS ====== */
+.card-title {
+  color: #ffcc00;
+}
+
+/* ====== NOSOTROS ====== */
+#nosotros img {
+  border: 3px solid #ffcc00;
+}
+
+/* ====== FORMULARIO DE CONTACTO ====== */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #ffcc00;
+}
+
+form .form-control:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+form button:hover {
+  background-color: #ffdd33;
+  color: #000;
+}
+}
+
+form .form-control:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+form button:hover {
+  background-color: #ffdd33;
+  color: #000;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  font-size: 0.9rem;
+}
+
+/* ====== ANIMACIÓN SUAVE ====== */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
