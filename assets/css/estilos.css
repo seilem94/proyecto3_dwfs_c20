@@ -4,28 +4,42 @@ body {
   scroll-behavior: smooth;
 }
 
-/* ====== HERO SECTION ====== */
-.hero {
-  background: 
-    linear-gradient(#00000080, #00000080), /* rgba(0, 0, 0, 0.5) → #00000080 */
-    url('../imagenes/hero.png') no-repeat center center/cover;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  color: #ffffff;
-  text-shadow: 0.125rem 0.125rem 0.3125rem #00000099; /* rgba(0, 0, 0, 0.6) → #00000099 */
-}
 
 /* ====== NAVBAR ====== */
 .navbar-brand img {
   transition: transform 0.3s ease;
-  height: 2.5rem;
+  height: 3.5rem;
 }
 
 .navbar-brand img:hover {
   transform: scale(1.1);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background:
+    linear-gradient(#00000080, #00000080),
+    url('../imagenes/hero.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start; /* alinea el contenido arriba */
+  justify-content: flex-start; /* alinea el contenido a la izquierda */
+  color: #ffffff;
+  text-shadow: 0.125rem 0.125rem 0.3125rem #00000099;
+  padding-top: 0rem; /* agrega espacio debajo del navbar */
+  padding-left: 0rem; /* opcional para separar del borde */
+}
+
+/* ====== NOSOTROS ====== */
+#nosotros img {
+  max-width: 85%;
+  height: auto;
+}
+#nosotros h2 {
+  color: #ffcc00;
+  display: flex;
+  align-items: center;
+
 }
 
 /* ====== SERVICIOS ====== */
@@ -34,12 +48,15 @@ body {
   font-size: 1.25rem;
 }
 
-/* ====== NOSOTROS ====== */
-#nosotros img {
-  border: 0.2rem solid #ffcc00;
+#servicios .card {
+  max-width: 20rem; 
+  margin: 1rem auto;   
   border-radius: 0.5rem;
-  max-width: 100%;
-  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#servicios .row {
+  margin-top: 5rem; 
 }
 
 /* ====== FORMULARIO DE CONTACTO ====== */
@@ -53,8 +70,7 @@ form {
 
 form .form-control:focus {
   border-color: #ffcc00;
-  box-shadow: 0 0 0.3125rem #ffcc0080; /* rgba(255, 204, 0, 0.5) → #ffcc0080 */
-}
+  box-shadow: 0 0 0.3125rem #ffcc0080; 
 
 form button {
   padding: 0.75rem 2rem;
